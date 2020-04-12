@@ -9,43 +9,59 @@
 import SwiftUI
 
 struct TimerView: View {
-    @State var timeRemaining = 20
-    let device = WKInterfaceDevice.init()
+    @EnvironmentObject var washingModel: WashingModel
     
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
     var body: some View {
-        ZStack{
-            ProgressCircle(time: self.timeRemaining)
-            Text("\(timeRemaining)")
-            .font(.title)
-            .onReceive(timer) { _ in
-                if self.timeRemaining > 0 {
-                    self.timeRemaining -= 1
-                } else {
-                    self.device.play(WKHapticType.stop)
-                }
+        VStack{
+            ZStack{
+                ProgressCircle()
+                Text("\(self.washingModel.currentTimer)")
+                .font(.title)
             }
-            
+            StartButton()
         }
     }
 }
 
 struct ProgressCircle : View {
-    var time: Int
+    @EnvironmentObject var washingModel: WashingModel
     
     var body: some View {
         var circleCol: Color
         
-        if time > 10 {
+        if self.washingModel.currentTimer > 10 {
             circleCol = Color.red
-        } else if time > 1 {
+        } else if self.washingModel.currentTimer >= 1 {
             circleCol = Color.orange
         } else {
             circleCol = Color.green
         }
         
         return Circle().stroke().foregroundColor(circleCol)
+    }
+}
+
+struct StopButton : View {
+    @EnvironmentObject var washingModel: WashingModel
+    
+    var body: some View {
+        Button(action: {
+            self.washingModel.stopWashing()
+        }) {
+            Text("Stop")
+        }
+    }
+}
+
+struct StartButton : View {
+    @EnvironmentObject var washingModel: WashingModel
+    
+    var body: some View {
+        Button(action: {
+            self.washingModel.startWashing()
+        }) {
+            Text("Start")
+        }
     }
 }
 

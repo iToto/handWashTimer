@@ -19,6 +19,7 @@
 		72979A9B2442BA44008D907E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A9A2442BA44008D907E /* ComplicationController.swift */; };
 		72979A9D2442BA45008D907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A9C2442BA45008D907E /* Assets.xcassets */; };
 		72979AA02442BA45008D907E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A9F2442BA45008D907E /* Preview Assets.xcassets */; };
+		72DE3AC124439E9F00AEBEAC /* WashingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DE3AC024439E9F00AEBEAC /* WashingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		72979A9F2442BA45008D907E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72979AA12442BA45008D907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72979AA22442BA45008D907E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		72DE3AC024439E9F00AEBEAC /* WashingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		72979A8F2442BA44008D907E /* handWashTimer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				72DE3ABF24439E7C00AEBEAC /* Model */,
 				721EBDAE2442C53C00F61A66 /* Views */,
 				72979A922442BA44008D907E /* HostingController.swift */,
 				72979A942442BA44008D907E /* ExtensionDelegate.swift */,
@@ -153,6 +156,14 @@
 				72979A9F2442BA45008D907E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72DE3ABF24439E7C00AEBEAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72DE3AC024439E9F00AEBEAC /* WashingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				72979A952442BA44008D907E /* ExtensionDelegate.swift in Sources */,
 				72979A992442BA44008D907E /* NotificationView.swift in Sources */,
 				72979A9B2442BA44008D907E /* ComplicationController.swift in Sources */,
+				72DE3AC124439E9F00AEBEAC /* WashingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

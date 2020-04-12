@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<TimerView> {
-    override var body: TimerView {
-        return TimerView()
+class HostingController: WKHostingController<AnyView> {
+    override var body: AnyView {
+        return AnyView(TimerView().environmentObject(WashingModel()))
     }
 }
