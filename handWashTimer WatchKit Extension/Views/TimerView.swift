@@ -15,7 +15,9 @@ struct TimerView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        Text("\(timeRemaining)")
+        ZStack{
+            ProgressCircle(time: self.timeRemaining)
+            Text("\(timeRemaining)")
             .font(.title)
             .onReceive(timer) { _ in
                 if self.timeRemaining > 0 {
@@ -24,6 +26,26 @@ struct TimerView: View {
                     self.device.play(WKHapticType.stop)
                 }
             }
+            
+        }
+    }
+}
+
+struct ProgressCircle : View {
+    var time: Int
+    
+    var body: some View {
+        var circleCol: Color
+        
+        if time > 10 {
+            circleCol = Color.red
+        } else if time > 1 {
+            circleCol = Color.orange
+        } else {
+            circleCol = Color.green
+        }
+        
+        return Circle().stroke().foregroundColor(circleCol)
     }
 }
 

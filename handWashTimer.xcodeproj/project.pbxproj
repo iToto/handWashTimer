@@ -12,7 +12,6 @@
 		72979A832442BA43008D907E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72979A812442BA43008D907E /* Interface.storyboard */; };
 		72979A852442BA44008D907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A842442BA44008D907E /* Assets.xcassets */; };
 		72979A8C2442BA44008D907E /* handWashTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		72979A912442BA44008D907E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A902442BA44008D907E /* ContentView.swift */; };
 		72979A932442BA44008D907E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A922442BA44008D907E /* HostingController.swift */; };
 		72979A952442BA44008D907E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A942442BA44008D907E /* ExtensionDelegate.swift */; };
 		72979A972442BA44008D907E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A962442BA44008D907E /* NotificationController.swift */; };
@@ -72,7 +71,6 @@
 		72979A842442BA44008D907E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72979A862442BA44008D907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "handWashTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72979A902442BA44008D907E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72979A922442BA44008D907E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		72979A942442BA44008D907E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		72979A962442BA44008D907E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				721EBDAE2442C53C00F61A66 /* Views */,
-				72979A902442BA44008D907E /* ContentView.swift */,
 				72979A922442BA44008D907E /* HostingController.swift */,
 				72979A942442BA44008D907E /* ExtensionDelegate.swift */,
 				72979A962442BA44008D907E /* NotificationController.swift */,
@@ -288,7 +285,6 @@
 			files = (
 				721EBDB02442C56000F61A66 /* TimerView.swift in Sources */,
 				72979A932442BA44008D907E /* HostingController.swift in Sources */,
-				72979A912442BA44008D907E /* ContentView.swift in Sources */,
 				72979A972442BA44008D907E /* NotificationController.swift in Sources */,
 				72979A952442BA44008D907E /* ExtensionDelegate.swift in Sources */,
 				72979A992442BA44008D907E /* NotificationView.swift in Sources */,
