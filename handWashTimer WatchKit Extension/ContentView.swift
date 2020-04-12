@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @State var currentDate = Date()
+//    let timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
+
     var body: some View {
-        Text("Hello, World!")
+        Text("Hand Washing Helper!")
     }
 }
 

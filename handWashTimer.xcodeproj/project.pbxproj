@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721EBDB02442C56000F61A66 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721EBDAF2442C56000F61A66 /* TimerView.swift */; };
 		72979A7D2442BA43008D907E /* handWashTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		72979A832442BA43008D907E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72979A812442BA43008D907E /* Interface.storyboard */; };
 		72979A852442BA44008D907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A842442BA44008D907E /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		721EBDAF2442C56000F61A66 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		72979A782442BA43008D907E /* handWashTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handWashTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "handWashTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72979A822442BA43008D907E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721EBDAE2442C53C00F61A66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				721EBDAF2442C56000F61A66 /* TimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		72979A712442BA43008D907E = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		72979A8F2442BA44008D907E /* handWashTimer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				721EBDAE2442C53C00F61A66 /* Views */,
 				72979A902442BA44008D907E /* ContentView.swift */,
 				72979A922442BA44008D907E /* HostingController.swift */,
 				72979A942442BA44008D907E /* ExtensionDelegate.swift */,
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721EBDB02442C56000F61A66 /* TimerView.swift in Sources */,
 				72979A932442BA44008D907E /* HostingController.swift in Sources */,
 				72979A912442BA44008D907E /* ContentView.swift in Sources */,
 				72979A972442BA44008D907E /* NotificationController.swift in Sources */,
