@@ -39,8 +39,8 @@ class WashingModel: ObservableObject  {
     func stopWashing() -> Void {
         // Timer done, play haptic
         self.isWashing = false
-        self.currentTimer = 0
-        self.device.play(WKHapticType.success)
+        self.currentTimer = WashingModel.WASHING_TIME
+        self.timer?.invalidate()
     }
     
     func countDown() -> Void {
@@ -54,8 +54,7 @@ class WashingModel: ObservableObject  {
                 self.countDown()
                 // Time's Up!
             } else if self.currentTimer == 0 {
-                self.stopWashing()
-                self.timer?.invalidate()
+                self.device.play(WKHapticType.stop)
             }
         }
     }

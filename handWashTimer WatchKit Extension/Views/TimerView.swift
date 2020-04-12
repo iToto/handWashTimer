@@ -19,6 +19,7 @@ struct TimerView: View {
                 .font(.title)
             }
             StartButton()
+            StopButton()
         }
     }
 }
