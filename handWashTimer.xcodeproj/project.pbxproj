@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72979A7D2442BA43008D907E /* handWashTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72979A832442BA43008D907E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72979A812442BA43008D907E /* Interface.storyboard */; };
+		72979A852442BA44008D907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A842442BA44008D907E /* Assets.xcassets */; };
+		72979A8C2442BA44008D907E /* handWashTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72979A912442BA44008D907E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A902442BA44008D907E /* ContentView.swift */; };
+		72979A932442BA44008D907E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A922442BA44008D907E /* HostingController.swift */; };
+		72979A952442BA44008D907E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A942442BA44008D907E /* ExtensionDelegate.swift */; };
+		72979A972442BA44008D907E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A962442BA44008D907E /* NotificationController.swift */; };
+		72979A992442BA44008D907E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A982442BA44008D907E /* NotificationView.swift */; };
+		72979A9B2442BA44008D907E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72979A9A2442BA44008D907E /* ComplicationController.swift */; };
+		72979A9D2442BA45008D907E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A9C2442BA45008D907E /* Assets.xcassets */; };
+		72979AA02442BA45008D907E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72979A9F2442BA45008D907E /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72979A7E2442BA43008D907E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72979A722442BA43008D907E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72979A7B2442BA43008D907E;
+			remoteInfo = "handWashTimer WatchKit App";
+		};
+		72979A8D2442BA44008D907E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72979A722442BA43008D907E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72979A8A2442BA44008D907E;
+			remoteInfo = "handWashTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72979AA82442BA45008D907E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72979A8C2442BA44008D907E /* handWashTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72979AAC2442BA45008D907E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				72979A7D2442BA43008D907E /* handWashTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72979A782442BA43008D907E /* handWashTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = handWashTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "handWashTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72979A822442BA43008D907E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		72979A842442BA44008D907E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72979A862442BA44008D907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "handWashTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72979A902442BA44008D907E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72979A922442BA44008D907E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		72979A942442BA44008D907E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		72979A962442BA44008D907E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		72979A982442BA44008D907E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		72979A9A2442BA44008D907E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		72979A9C2442BA45008D907E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72979A9F2442BA45008D907E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72979AA12442BA45008D907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72979AA22442BA45008D907E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72979A882442BA44008D907E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72979A712442BA43008D907E = {
+			isa = PBXGroup;
+			children = (
+				72979A802442BA43008D907E /* handWashTimer WatchKit App */,
+				72979A8F2442BA44008D907E /* handWashTimer WatchKit Extension */,
+				72979A792442BA43008D907E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72979A792442BA43008D907E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72979A782442BA43008D907E /* handWashTimer.app */,
+				72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */,
+				72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72979A802442BA43008D907E /* handWashTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				72979A812442BA43008D907E /* Interface.storyboard */,
+				72979A842442BA44008D907E /* Assets.xcassets */,
+				72979A862442BA44008D907E /* Info.plist */,
+			);
+			path = "handWashTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		72979A8F2442BA44008D907E /* handWashTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72979A902442BA44008D907E /* ContentView.swift */,
+				72979A922442BA44008D907E /* HostingController.swift */,
+				72979A942442BA44008D907E /* ExtensionDelegate.swift */,
+				72979A962442BA44008D907E /* NotificationController.swift */,
+				72979A982442BA44008D907E /* NotificationView.swift */,
+				72979A9A2442BA44008D907E /* ComplicationController.swift */,
+				72979A9C2442BA45008D907E /* Assets.xcassets */,
+				72979AA12442BA45008D907E /* Info.plist */,
+				72979AA22442BA45008D907E /* PushNotificationPayload.apns */,
+				72979A9E2442BA45008D907E /* Preview Content */,
+			);
+			path = "handWashTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		72979A9E2442BA45008D907E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72979A9F2442BA45008D907E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72979A772442BA43008D907E /* handWashTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72979AAD2442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer" */;
+			buildPhases = (
+				72979A762442BA43008D907E /* Resources */,
+				72979AAC2442BA45008D907E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72979A7F2442BA43008D907E /* PBXTargetDependency */,
+			);
+			name = handWashTimer;
+			productName = handWashTimer;
+			productReference = 72979A782442BA43008D907E /* handWashTimer.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		72979A7B2442BA43008D907E /* handWashTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72979AA92442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer WatchKit App" */;
+			buildPhases = (
+				72979A7A2442BA43008D907E /* Resources */,
+				72979AA82442BA45008D907E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72979A8E2442BA44008D907E /* PBXTargetDependency */,
+			);
+			name = "handWashTimer WatchKit App";
+			productName = "handWashTimer WatchKit App";
+			productReference = 72979A7C2442BA43008D907E /* handWashTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		72979A8A2442BA44008D907E /* handWashTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72979AA52442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer WatchKit Extension" */;
+			buildPhases = (
+				72979A872442BA44008D907E /* Sources */,
+				72979A882442BA44008D907E /* Frameworks */,
+				72979A892442BA44008D907E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "handWashTimer WatchKit Extension";
+			productName = "handWashTimer WatchKit Extension";
+			productReference = 72979A8B2442BA44008D907E /* handWashTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72979A722442BA43008D907E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Salvatore D'Agostino";
+				TargetAttributes = {
+					72979A772442BA43008D907E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					72979A7B2442BA43008D907E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					72979A8A2442BA44008D907E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 72979A752442BA43008D907E /* Build configuration list for PBXProject "handWashTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72979A712442BA43008D907E;
+			productRefGroup = 72979A792442BA43008D907E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72979A772442BA43008D907E /* handWashTimer */,
+				72979A7B2442BA43008D907E /* handWashTimer WatchKit App */,
+				72979A8A2442BA44008D907E /* handWashTimer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72979A762442BA43008D907E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72979A7A2442BA43008D907E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72979A852442BA44008D907E /* Assets.xcassets in Resources */,
+				72979A832442BA43008D907E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72979A892442BA44008D907E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72979AA02442BA45008D907E /* Preview Assets.xcassets in Resources */,
+				72979A9D2442BA45008D907E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72979A872442BA44008D907E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72979A932442BA44008D907E /* HostingController.swift in Sources */,
+				72979A912442BA44008D907E /* ContentView.swift in Sources */,
+				72979A972442BA44008D907E /* NotificationController.swift in Sources */,
+				72979A952442BA44008D907E /* ExtensionDelegate.swift in Sources */,
+				72979A992442BA44008D907E /* NotificationView.swift in Sources */,
+				72979A9B2442BA44008D907E /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72979A7F2442BA43008D907E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72979A7B2442BA43008D907E /* handWashTimer WatchKit App */;
+			targetProxy = 72979A7E2442BA43008D907E /* PBXContainerItemProxy */;
+		};
+		72979A8E2442BA44008D907E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72979A8A2442BA44008D907E /* handWashTimer WatchKit Extension */;
+			targetProxy = 72979A8D2442BA44008D907E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72979A812442BA43008D907E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72979A822442BA43008D907E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72979AA32442BA45008D907E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72979AA42442BA45008D907E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72979AA62442BA45008D907E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"handWashTimer WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "handWashTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		72979AA72442BA45008D907E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"handWashTimer WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "handWashTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		72979AAA2442BA45008D907E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				IBSC_MODULE = handWashTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "handWashTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		72979AAB2442BA45008D907E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				IBSC_MODULE = handWashTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "handWashTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		72979AAE2442BA45008D907E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		72979AAF2442BA45008D907E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E4A2FV35P8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itoto.handWashTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72979A752442BA43008D907E /* Build configuration list for PBXProject "handWashTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72979AA32442BA45008D907E /* Debug */,
+				72979AA42442BA45008D907E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72979AA52442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72979AA62442BA45008D907E /* Debug */,
+				72979AA72442BA45008D907E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72979AA92442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72979AAA2442BA45008D907E /* Debug */,
+				72979AAB2442BA45008D907E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72979AAD2442BA45008D907E /* Build configuration list for PBXNativeTarget "handWashTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72979AAE2442BA45008D907E /* Debug */,
+				72979AAF2442BA45008D907E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72979A722442BA43008D907E /* Project object */;
+}
