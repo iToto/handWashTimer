@@ -16,6 +16,7 @@ class WashingModel: ObservableObject  {
     var timer: Timer?
     let device: WKInterfaceDevice
     static var WASHING_TIME = 5
+    var extendedRuntimeSession: WKExtendedRuntimeSession?
     
     init() {
         self.isWashing = true
@@ -25,6 +26,8 @@ class WashingModel: ObservableObject  {
     }
     
     func startWashing() -> Void {
+        extendedRuntimeSession = WKExtendedRuntimeSession()
+        extendedRuntimeSession?.start()
         self.isWashing = true
         self.currentTimer = WashingModel.WASHING_TIME
         self.timer = Timer.scheduledTimer(
@@ -38,6 +41,8 @@ class WashingModel: ObservableObject  {
     
     func stopWashing() -> Void {
         // Timer done, play haptic
+        extendedRuntimeSession?.invalidate()
+        extendedRuntimeSession = nil
         self.isWashing = false
         self.currentTimer = WashingModel.WASHING_TIME
         self.timer?.invalidate()
