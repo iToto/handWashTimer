@@ -15,7 +15,7 @@ class WashingModel: ObservableObject  {
     var isWashing: Bool
     var timer: Timer?
     let device: WKInterfaceDevice
-    static var WASHING_TIME = 5
+    static var WASHING_TIME = 20
     var extendedRuntimeSession: WKExtendedRuntimeSession?
     
     init() {
