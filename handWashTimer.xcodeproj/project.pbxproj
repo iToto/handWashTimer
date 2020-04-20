@@ -81,6 +81,7 @@
 		72979A9F2442BA45008D907E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72979AA12442BA45008D907E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72979AA22442BA45008D907E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		72D4429A244D3441005D606C /* handWashTimer WatchKit ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "handWashTimer WatchKit ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 		72DE3AC024439E9F00AEBEAC /* WashingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +136,7 @@
 		72979A8F2442BA44008D907E /* handWashTimer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				72D4429A244D3441005D606C /* handWashTimer WatchKit ExtensionRelease.entitlements */,
 				72DE3ABF24439E7C00AEBEAC /* Model */,
 				721EBDAE2442C53C00F61A66 /* Views */,
 				72979A922442BA44008D907E /* HostingController.swift */,
@@ -471,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "handWashTimer WatchKit Extension/handWashTimer WatchKit ExtensionRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"handWashTimer WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = E4A2FV35P8;
