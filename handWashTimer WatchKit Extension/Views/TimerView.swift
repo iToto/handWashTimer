@@ -13,12 +13,12 @@ struct TimerView: View {
     
     var body: some View {
         VStack{
+            StartButton()
             ZStack{
                 ProgressCircle()
                 Text("\(self.washingModel.currentTimer)")
                 .font(.title)
             }
-            StartButton()
             StopButton()
         }
     }
